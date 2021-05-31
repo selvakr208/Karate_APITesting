@@ -22,7 +22,7 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-pass" class="bg-success">4</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,11 +30,17 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-05-31 10:14:30 PM</div>
+    <div>2021-05-31 11:58:35 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:17]"><span>[1.1:17]</span> <span>Verify that method type for get article service is GET</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:18]"><span>[1.2:18]</span> <span>Verify that method type for get article service is GET</span></a>
+          </div>
           <div class="nav-item passed">
             <a href="#[4.1:53]"><span>[4.1:53]</span> <span>Verify the expected values for the get article service is as per expected json file data</span></a>
           </div>
@@ -53,6 +59,326 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
+          <div class="scenario-heading" id="[1.1:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">debug1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:17]</span>
+                <span class="scenario-name">Verify that method type for get article service is GET</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5555</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">23:58:29.200 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;,2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">52</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5502</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">23:58:31.785 request:
+1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
+1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:58:34.871 response time in milliseconds: 3085
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 &lt; Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 164
+1 &lt; Etag: &quot;975313918&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Mon, 31 May 2021 22:58:35 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">debug1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:18]</span>
+                <span class="scenario-name">Verify that method type for get article service is GET</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5582</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">23:58:29.200 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;,3</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5533</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">23:58:31.785 request:
+1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/3
+1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:58:34.902 response time in milliseconds: 3114
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 &lt; Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 198
+1 &lt; Etag: &quot;1823904463&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Mon, 31 May 2021 22:58:35 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;createdAt&quot;:&quot;2020-10-27T13:09:32.347Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.svg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;3&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;£31 million pounds shortfall in economy&quot;,&quot;priority&quot;:25}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
           <div class="scenario-heading" id="[4.1:53]">
             <div class="heading-container">
               <div class="scenario-tags">
@@ -65,7 +391,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3126</span>
+              <span>ms:</span>&nbsp;<span>5768</span>
             </div>
           </div>
           <div class="step-row">
@@ -97,7 +423,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.5">22:14:26.782 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.5">23:58:29.200 karate.env system property was: null 
 </div>   
 
   
@@ -117,7 +443,7 @@
         <span>*</span>&nbsp;<span>def response_Article = read(&#39;classpath:App_sky/json/expectedReq_Res/GetArticleResponse.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">179</div>
+    <div class="time-cell passed">532</div>
   </div>
 
    
@@ -145,7 +471,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;,2</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -173,7 +499,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">2826</div>
+    <div class="time-cell passed">4980</div>
   </div>
 
    
@@ -182,7 +508,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.46">22:14:28.557 request:
+  <div class="preformatted" data-parent="1.46">23:58:31.784 request:
 1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
 1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
 1 &gt; Connection: Keep-Alive
@@ -190,7 +516,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:14:29.909 response time in milliseconds: 1327
+23:58:34.820 response time in milliseconds: 2987
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -202,7 +528,7 @@
 1 &lt; Content-Length: 164
 1 &lt; Etag: &quot;975313918&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Mon, 31 May 2021 21:14:30 GMT
+1 &lt; Date: Mon, 31 May 2021 22:58:35 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45}
 </div>   
@@ -280,7 +606,7 @@
         <span>And</span>&nbsp;<span>match response == response_Article</span>
       </div>
     </div>
-    <div class="time-cell passed">101</div>
+    <div class="time-cell passed">250</div>
   </div>
 
    
@@ -309,7 +635,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3267</span>
+              <span>ms:</span>&nbsp;<span>6006</span>
             </div>
           </div>
           <div class="step-row">
@@ -341,7 +667,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.5">22:14:26.811 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.5">23:58:29.201 karate.env system property was: null 
 </div>   
 
   
@@ -361,7 +687,7 @@
         <span>*</span>&nbsp;<span>def imageFormat = { &quot;url&quot;: &quot;#string&quot;, &quot;fileType&quot;: &quot;#string&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">140</div>
+    <div class="time-cell passed">502</div>
   </div>
 
    
@@ -389,7 +715,7 @@
         <span>*</span>&nbsp;<span>def isValidTime = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">146</div>
+    <div class="time-cell passed">44</div>
   </div>
 
    
@@ -417,7 +743,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;,2</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -445,7 +771,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">2849</div>
+    <div class="time-cell passed">4957</div>
   </div>
 
    
@@ -454,7 +780,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.62">22:14:28.556 request:
+  <div class="preformatted" data-parent="1.62">23:58:31.784 request:
 1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
 1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
 1 &gt; Connection: Keep-Alive
@@ -462,7 +788,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:14:29.914 response time in milliseconds: 1329
+23:58:34.820 response time in milliseconds: 2986
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -474,7 +800,7 @@
 1 &lt; Content-Length: 164
 1 &lt; Etag: &quot;975313918&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Mon, 31 May 2021 21:14:30 GMT
+1 &lt; Date: Mon, 31 May 2021 22:58:35 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45}
 </div>   
@@ -524,7 +850,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#object&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">250</div>
   </div>
 
    
@@ -552,7 +878,7 @@
         <span>And</span>&nbsp;<span>match response != &#39;#array&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -580,7 +906,7 @@
         <span>And</span>&nbsp;<span>match response ==</span>
       </div>
     </div>
-    <div class="time-cell passed">122</div>
+    <div class="time-cell passed">250</div>
   </div>
 
    

@@ -22,7 +22,7 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-pass" class="bg-success">3</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,11 +30,14 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-05-31 10:14:34 PM</div>
+    <div>2021-05-31 11:58:39 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Verify that the get ArticleList service response status code is 200</span></a>
+          </div>
           <div class="nav-item passed">
             <a href="#[4:34]"><span>[4:34]</span> <span>Verify that the get ArticleList service returns data in expected schema</span></a>
           </div>
@@ -53,6 +56,173 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">debug1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Verify that the get ArticleList service response status code is 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5649</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Given url &quot;https://5f99522350d84900163b8737.mockapi.io/tech-test/&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:58:29.200 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5594</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">23:58:31.784 request:
+1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
+1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:58:34.939 response time in milliseconds: 3152
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 &lt; Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 785
+1 &lt; Etag: &quot;-1508742839&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Mon, 31 May 2021 22:58:35 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;createdAt&quot;:&quot;2020-10-27T19:10:01.232Z&quot;,&quot;image&quot;:null,&quot;topics&quot;:[&quot;business&quot;,&quot;politics&quot;,&quot;technology&quot;],&quot;id&quot;:&quot;1&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 1&quot;,&quot;priority&quot;:89},{&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45},{&quot;createdAt&quot;:&quot;2020-10-27T13:09:32.347Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.svg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;3&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;£31 million pounds shortfall in economy&quot;,&quot;priority&quot;:25},{&quot;createdAt&quot;:&quot;2020-10-27T17:03:33.158Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[&quot;USA&quot;],&quot;id&quot;:&quot;4656364867443&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 4&quot;,&quot;priority&quot;:0},{&quot;createdAt&quot;:&quot;2020-10-28T02:46:16.766Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[],&quot;id&quot;:&quot;5&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 5&quot;,&quot;priority&quot;:56}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
           <div class="scenario-heading" id="[4:34]">
             <div class="heading-container">
               <div class="scenario-tags">
@@ -65,7 +235,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3330</span>
+              <span>ms:</span>&nbsp;<span>1542</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,7 +274,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">22:14:26.784 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.6">23:58:35.009 karate.env system property was: null 
 </div>   
 
   
@@ -124,7 +294,7 @@
         <span>*</span>&nbsp;<span>def imageFormat = { &quot;url&quot;: &quot;#string&quot;, &quot;fileType&quot;: &quot;#string&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">131</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -152,7 +322,7 @@
         <span>*</span>&nbsp;<span>def isValidTime = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">78</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -180,7 +350,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -208,7 +378,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">2790</div>
+    <div class="time-cell passed">1457</div>
   </div>
 
    
@@ -217,7 +387,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.39">22:14:28.556 request:
+  <div class="preformatted" data-parent="0.39">23:58:35.088 request:
 1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
 1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
 1 &gt; Connection: Keep-Alive
@@ -225,7 +395,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:14:29.910 response time in milliseconds: 1329
+23:58:36.503 response time in milliseconds: 1413
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -237,7 +407,7 @@
 1 &lt; Content-Length: 785
 1 &lt; Etag: &quot;-1508742839&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Mon, 31 May 2021 21:14:30 GMT
+1 &lt; Date: Mon, 31 May 2021 22:58:36 GMT
 1 &lt; Via: 1.1 vegur
 [{&quot;createdAt&quot;:&quot;2020-10-27T19:10:01.232Z&quot;,&quot;image&quot;:null,&quot;topics&quot;:[&quot;business&quot;,&quot;politics&quot;,&quot;technology&quot;],&quot;id&quot;:&quot;1&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 1&quot;,&quot;priority&quot;:89},{&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45},{&quot;createdAt&quot;:&quot;2020-10-27T13:09:32.347Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.svg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;3&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;£31 million pounds shortfall in economy&quot;,&quot;priority&quot;:25},{&quot;createdAt&quot;:&quot;2020-10-27T17:03:33.158Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[&quot;USA&quot;],&quot;id&quot;:&quot;4656364867443&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 4&quot;,&quot;priority&quot;:0},{&quot;createdAt&quot;:&quot;2020-10-28T02:46:16.766Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[],&quot;id&quot;:&quot;5&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 5&quot;,&quot;priority&quot;:56}]
 </div>   
@@ -287,7 +457,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">104</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -315,7 +485,7 @@
         <span>And</span>&nbsp;<span>match response == &#39;#[5]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">72</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -343,7 +513,7 @@
         <span>And</span>&nbsp;<span>match each response ==</span>
       </div>
     </div>
-    <div class="time-cell passed">154</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
@@ -380,7 +550,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3104</span>
+              <span>ms:</span>&nbsp;<span>1444</span>
             </div>
           </div>
           <div class="step-row">
@@ -419,7 +589,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.6">22:14:26.783 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.6">23:58:35.071 karate.env system property was: null 
 </div>   
 
   
@@ -439,7 +609,7 @@
         <span>*</span>&nbsp;<span>def response_ArticleList = read(&#39;classpath:App_sky/json/expectedReq_Res/ArticleListResponse.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">182</div>
+    <div class="time-cell passed">23</div>
   </div>
 
    
@@ -467,7 +637,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -495,7 +665,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">2876</div>
+    <div class="time-cell passed">1417</div>
   </div>
 
    
@@ -504,7 +674,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.165">22:14:28.556 request:
+  <div class="preformatted" data-parent="1.165">23:58:35.102 request:
 1 &gt; GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
 1 &gt; Host: 5f99522350d84900163b8737.mockapi.io
 1 &gt; Connection: Keep-Alive
@@ -512,7 +682,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-22:14:29.931 response time in milliseconds: 1329
+23:58:36.501 response time in milliseconds: 1387
 1 &lt; 200
 1 &lt; Server: Cowboy
 1 &lt; Connection: keep-alive
@@ -524,7 +694,7 @@
 1 &lt; Content-Length: 785
 1 &lt; Etag: &quot;-1508742839&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Mon, 31 May 2021 21:14:30 GMT
+1 &lt; Date: Mon, 31 May 2021 22:58:36 GMT
 1 &lt; Via: 1.1 vegur
 [{&quot;createdAt&quot;:&quot;2020-10-27T19:10:01.232Z&quot;,&quot;image&quot;:null,&quot;topics&quot;:[&quot;business&quot;,&quot;politics&quot;,&quot;technology&quot;],&quot;id&quot;:&quot;1&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 1&quot;,&quot;priority&quot;:89},{&quot;createdAt&quot;:&quot;2020-10-28T07:45:21.526Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.jpg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;2&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 2&quot;,&quot;priority&quot;:45},{&quot;createdAt&quot;:&quot;2020-10-27T13:09:32.347Z&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https:\/\/imgur.com&quot;,&quot;fileType&quot;:&quot;.svg&quot;},&quot;topics&quot;:[],&quot;id&quot;:&quot;3&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;£31 million pounds shortfall in economy&quot;,&quot;priority&quot;:25},{&quot;createdAt&quot;:&quot;2020-10-27T17:03:33.158Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[&quot;USA&quot;],&quot;id&quot;:&quot;4656364867443&quot;,&quot;sensitive&quot;:true,&quot;title&quot;:&quot;title 4&quot;,&quot;priority&quot;:0},{&quot;createdAt&quot;:&quot;2020-10-28T02:46:16.766Z&quot;,&quot;image&quot;:{},&quot;topics&quot;:[],&quot;id&quot;:&quot;5&quot;,&quot;sensitive&quot;:false,&quot;title&quot;:&quot;title 5&quot;,&quot;priority&quot;:56}]
 </div>   
@@ -574,7 +744,7 @@
         <span>And</span>&nbsp;<span>match response == response_ArticleList</span>
       </div>
     </div>
-    <div class="time-cell passed">37</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    

@@ -1,27 +1,12 @@
-22:14:19.303 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @regression
-22:14:23.168 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-22:14:23.290 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
-22:14:26.779 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-22:14:26.779 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-22:14:26.779 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-22:14:26.810 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-22:14:28.555 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
-1 > Host: 5f99522350d84900163b8737.mockapi.io
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
-1 > Accept-Encoding: gzip,deflate
-
-
-22:14:28.555 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
-1 > Host: 5f99522350d84900163b8737.mockapi.io
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
-1 > Accept-Encoding: gzip,deflate
-
-
-22:14:28.555 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+23:58:22.124 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @smoke
+23:58:24.535 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:58:24.566 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+23:58:29.197 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:29.186 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:29.198 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:29.186 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:29.197 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:31.784 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
 1 > Host: 5f99522350d84900163b8737.mockapi.io
 1 > Connection: Keep-Alive
@@ -29,7 +14,15 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-22:14:28.557 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+23:58:31.784 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
+1 > Host: 5f99522350d84900163b8737.mockapi.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:58:31.784 [pool-1-thread-4] DEBUG com.intuit.karate - request:
 1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
 1 > Host: 5f99522350d84900163b8737.mockapi.io
 1 > Connection: Keep-Alive
@@ -37,7 +30,23 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-22:14:29.907 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1327
+23:58:31.784 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/3
+1 > Host: 5f99522350d84900163b8737.mockapi.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:58:31.784 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles/2
+1 > Host: 5f99522350d84900163b8737.mockapi.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:58:34.819 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2987
 1 < 200
 1 < Server: Cowboy
 1 < Connection: keep-alive
@@ -49,25 +58,10 @@
 1 < Content-Length: 164
 1 < Etag: "975313918"
 1 < Vary: Accept-Encoding
-1 < Date: Mon, 31 May 2021 21:14:30 GMT
+1 < Date: Mon, 31 May 2021 22:58:35 GMT
 1 < Via: 1.1 vegur
 {"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45}
-22:14:29.908 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1329
-1 < 200
-1 < Server: Cowboy
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
-1 < Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
-1 < Content-Type: application/json
-1 < Content-Length: 785
-1 < Etag: "-1508742839"
-1 < Vary: Accept-Encoding
-1 < Date: Mon, 31 May 2021 21:14:30 GMT
-1 < Via: 1.1 vegur
-[{"createdAt":"2020-10-27T19:10:01.232Z","image":null,"topics":["business","politics","technology"],"id":"1","sensitive":false,"title":"title 1","priority":89},{"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45},{"createdAt":"2020-10-27T13:09:32.347Z","image":{"url":"https:\/\/imgur.com","fileType":".svg"},"topics":[],"id":"3","sensitive":false,"title":"£31 million pounds shortfall in economy","priority":25},{"createdAt":"2020-10-27T17:03:33.158Z","image":{},"topics":["USA"],"id":"4656364867443","sensitive":true,"title":"title 4","priority":0},{"createdAt":"2020-10-28T02:46:16.766Z","image":{},"topics":[],"id":"5","sensitive":false,"title":"title 5","priority":56}]
-22:14:29.907 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1329
+23:58:34.819 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2986
 1 < 200
 1 < Server: Cowboy
 1 < Connection: keep-alive
@@ -79,10 +73,40 @@
 1 < Content-Length: 164
 1 < Etag: "975313918"
 1 < Vary: Accept-Encoding
-1 < Date: Mon, 31 May 2021 21:14:30 GMT
+1 < Date: Mon, 31 May 2021 22:58:35 GMT
 1 < Via: 1.1 vegur
 {"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45}
-22:14:29.908 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1329
+23:58:34.870 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3085
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 < Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 < Content-Type: application/json
+1 < Content-Length: 164
+1 < Etag: "975313918"
+1 < Vary: Accept-Encoding
+1 < Date: Mon, 31 May 2021 22:58:35 GMT
+1 < Via: 1.1 vegur
+{"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45}
+23:58:34.900 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3114
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 < Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 < Content-Type: application/json
+1 < Content-Length: 198
+1 < Etag: "1823904463"
+1 < Vary: Accept-Encoding
+1 < Date: Mon, 31 May 2021 22:58:35 GMT
+1 < Via: 1.1 vegur
+{"createdAt":"2020-10-27T13:09:32.347Z","image":{"url":"https:\/\/imgur.com","fileType":".svg"},"topics":[],"id":"3","sensitive":false,"title":"£31 million pounds shortfall in economy","priority":25}
+23:58:34.938 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3152
 1 < 200
 1 < Server: Cowboy
 1 < Connection: keep-alive
@@ -94,8 +118,56 @@
 1 < Content-Length: 785
 1 < Etag: "-1508742839"
 1 < Vary: Accept-Encoding
-1 < Date: Mon, 31 May 2021 21:14:30 GMT
+1 < Date: Mon, 31 May 2021 22:58:35 GMT
 1 < Via: 1.1 vegur
 [{"createdAt":"2020-10-27T19:10:01.232Z","image":null,"topics":["business","politics","technology"],"id":"1","sensitive":false,"title":"title 1","priority":89},{"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45},{"createdAt":"2020-10-27T13:09:32.347Z","image":{"url":"https:\/\/imgur.com","fileType":".svg"},"topics":[],"id":"3","sensitive":false,"title":"£31 million pounds shortfall in economy","priority":25},{"createdAt":"2020-10-27T17:03:33.158Z","image":{},"topics":["USA"],"id":"4656364867443","sensitive":true,"title":"title 4","priority":0},{"createdAt":"2020-10-28T02:46:16.766Z","image":{},"topics":[],"id":"5","sensitive":false,"title":"title 5","priority":56}]
-22:14:34.199 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:App_sky/features/GetArticle.feature
-22:14:34.867 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:App_sky/features/GetArticleList.feature
+23:58:34.996 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:35.070 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:35.083 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
+1 > Host: 5f99522350d84900163b8737.mockapi.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:58:35.101 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://5f99522350d84900163b8737.mockapi.io/tech-test/articles
+1 > Host: 5f99522350d84900163b8737.mockapi.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:58:36.500 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1387
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 < Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 < Content-Type: application/json
+1 < Content-Length: 785
+1 < Etag: "-1508742839"
+1 < Vary: Accept-Encoding
+1 < Date: Mon, 31 May 2021 22:58:36 GMT
+1 < Via: 1.1 vegur
+[{"createdAt":"2020-10-27T19:10:01.232Z","image":null,"topics":["business","politics","technology"],"id":"1","sensitive":false,"title":"title 1","priority":89},{"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45},{"createdAt":"2020-10-27T13:09:32.347Z","image":{"url":"https:\/\/imgur.com","fileType":".svg"},"topics":[],"id":"3","sensitive":false,"title":"£31 million pounds shortfall in economy","priority":25},{"createdAt":"2020-10-27T17:03:33.158Z","image":{},"topics":["USA"],"id":"4656364867443","sensitive":true,"title":"title 4","priority":0},{"createdAt":"2020-10-28T02:46:16.766Z","image":{},"topics":[],"id":"5","sensitive":false,"title":"title 5","priority":56}]
+23:58:36.503 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1413
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 < Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 < Content-Type: application/json
+1 < Content-Length: 785
+1 < Etag: "-1508742839"
+1 < Vary: Accept-Encoding
+1 < Date: Mon, 31 May 2021 22:58:36 GMT
+1 < Via: 1.1 vegur
+[{"createdAt":"2020-10-27T19:10:01.232Z","image":null,"topics":["business","politics","technology"],"id":"1","sensitive":false,"title":"title 1","priority":89},{"createdAt":"2020-10-28T07:45:21.526Z","image":{"url":"https:\/\/imgur.com","fileType":".jpg"},"topics":[],"id":"2","sensitive":true,"title":"title 2","priority":45},{"createdAt":"2020-10-27T13:09:32.347Z","image":{"url":"https:\/\/imgur.com","fileType":".svg"},"topics":[],"id":"3","sensitive":false,"title":"£31 million pounds shortfall in economy","priority":25},{"createdAt":"2020-10-27T17:03:33.158Z","image":{},"topics":["USA"],"id":"4656364867443","sensitive":true,"title":"title 4","priority":0},{"createdAt":"2020-10-28T02:46:16.766Z","image":{},"topics":[],"id":"5","sensitive":false,"title":"title 5","priority":56}]
+23:58:39.368 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:App_sky/features/GetArticle.feature
+23:58:39.768 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:App_sky/features/GetArticleList.feature
