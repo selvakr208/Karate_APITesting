@@ -1,0 +1,12 @@
+{
+    "id": "2",
+    "createdAt": "2020-10-28T07:45:21.526Z",
+    "title": "title 2",
+    "sensitive": true,
+    "topics": [],
+    "image": {
+        "url": "https://imgur.com",
+        "fileType": ".jpg"
+    },
+    "priority": 45
+}
